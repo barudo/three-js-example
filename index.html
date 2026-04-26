@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Three.js GLB Color Picker</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three.module.js",
+          "three/addons/loaders/GLTFLoader.js": "./vendor/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="app">
+      <canvas id="scene" aria-label="3D model viewer"></canvas>
+      <div class="palette" aria-label="Color options">
+        <button class="swatch swatch-red" type="button" data-color="#d92d20" aria-label="Red"></button>
+        <button class="swatch swatch-blue" type="button" data-color="#2563eb" aria-label="Blue"></button>
+        <button class="swatch swatch-green" type="button" data-color="#16a34a" aria-label="Green"></button>
+        <button class="swatch swatch-orange" type="button" data-color="#f97316" aria-label="Orange"></button>
+        <button class="swatch swatch-yellow" type="button" data-color="#facc15" aria-label="Yellow"></button>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
